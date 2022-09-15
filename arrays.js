@@ -1,4 +1,18 @@
-let arr =[20, 30, 40, 50, 100]
+/**
+ * Filter out all the 'FAIL' elements in an array
+ * 
+ * @examples
+ * ['A+', 'A', 'FAIL'] => ['A+, 'A']
+ * ['FAIL', 'FAIL', 'B'] => ['B']
+ * ['FAIL'] => []
+ */
+
+let grades = ['A+', 'A', 'FAIL']
+
+let goodGrades = grades.filter(element => element !== 'FAIL') 
+console.log(goodGrades)
+
+// let arr =[20, 30, 40, 50, 100]
 
 //[20, 30, 40, 50, 100]
 // let newArr = arr.filter((element) => {
@@ -13,8 +27,8 @@ let arr =[20, 30, 40, 50, 100]
 //     return element < 50
 // })
 
-let newArr = arr.filter(element => element < 50)
-console.log(newArr)
+// let newArr = arr.filter(element => element < 50)
+// console.log(newArr)
 
 //Frist element of array:
 // console.log(arr[0])
