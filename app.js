@@ -1,41 +1,21 @@
-//DRY dont repeat yourself
-
-// let count = 1;
-// while (count <= 100) {
-//     console.log(count)
-//     count = count + 1;
-// }
-
-/** Write a for-loop that loops 1 to 20
- * If the number id divisible by 3, print "frontend"
- * If the number is divisible by 5, print "Simplified"
- * If the number is divisible by 3 and 5, print "Frontend Simplified"
- * If the number is *not* divisible by 3 or 5 , print the number 
+/** Create a function that converts Celsius to fahrenheit
  * 
- * @example1 
+ * Celsius to fahrenheit formula:
+ * F = C x 1.8 + 32
  * 
- * 1 -> 1 
- * 2 -> 2 
- * 3-> "Frontend"
- * 4 -> 4
- * 5 -> "Simplified"
- * ...
- * 15 -> "Frontend Simplified"
- * ...
- * 20 -> "Simplified"
+ * @example
+ * convertCelsiusToFahrenheit(0) -> 32
+ * convertCelsiusToFahrenheit(10) -> 50
+ * convertCelsiusToFahrenheit(30) -> 86
  */
 
-for (let i = 1; i <=20; ++i) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log(`${i} -> Frontend Simplified`)
-    }
-    else if (i % 3 === 0) {
-        console.log(`${i} -> Frontend`)
-    }
-    else if (i % 5 === 0) {
-        console.log(`${i} -> Simplified`)
-    }
-    else {
-        console.log(`${i} -> ${i}`)
-    }
+// function convertCelsiusToFahrenheit(celsius) {
+//     return celsius * 1.8 + 32
+// }
+
+const convertCelsiusToFahrenheit = (celsius) => {
+    return celsius * 1.8 + 32
 }
+console.log(convertCelsiusToFahrenheit(0))
+console.log(convertCelsiusToFahrenheit(10))
+console.log(convertCelsiusToFahrenheit(23))
