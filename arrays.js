@@ -1,4 +1,42 @@
 /**
+ * Turn each element in an array of dollars into cents
+ * 
+ * @examples
+ * [1, 5, 10, 3] => [100, 500, 1000, 300]
+ * [0, 10, 20] => [0, 1000, 2000]
+ */
+
+let dollars = [1, 5, 10, 3];
+
+let cents = dollars.map(element => {
+    return element * 100
+})
+
+console.log(cents)
+
+// let arr = [1, 4, 9, 16]
+
+// let newArray = arr.map(element => 'dog')
+
+// console.log(newArray)
+
+//Create a new empty array called 'goodGrades'
+
+// let grades = ['A+', 'A', 'FAIL']
+
+// let goodGrades = []
+
+// for (let i = 0; i < grades.length; ++i) {
+//     //add the current element onto 'goodGrades'
+//     //the current element is not equal to 
+//     if (grades[i] !=='FAIL') {
+//         goodGrades.push(grades[i]);
+//     }
+// }
+
+// console.log(goodGrades);
+
+/**
  * Filter out all the 'FAIL' elements in an array
  * 
  * @examples
@@ -7,10 +45,10 @@
  * ['FAIL'] => []
  */
 
-let grades = ['A+', 'A', 'FAIL']
+// let grades = ['A+', 'A', 'FAIL']
 
-let goodGrades = grades.filter(element => element !== 'FAIL') 
-console.log(goodGrades)
+// let goodGrades = grades.filter(element => element !== 'FAIL') 
+// console.log(goodGrades)
 
 // let arr =[20, 30, 40, 50, 100]
 
